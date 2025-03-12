@@ -1,0 +1,96 @@
+:root {
+  --dark: #010101;
+  --light: #f9f6ee;
+
+  --blue: #0b6af9;
+  --red: #f75b27;
+  --pink: #f6a0d8;
+  --yellow: #f7de40;
+
+  --bg: var(--dark);
+  --accent: var(--light);
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: var(--bg);
+}
+
+main {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  width: min(100vw, 166.6667vh);
+  height: min(100vh, 60vw);
+  transform: scale(0.9);
+}
+
+svg {
+  margin: auto;
+
+  width: 90%;
+  height: auto;
+  overflow: hidden;
+
+  background: var(--accent);
+}
+
+path {
+  stroke: none;
+}
+
+.bg {
+  background: var(--bg);
+  fill: var(--bg);
+}
+
+.accent {
+  background: var(--accent);
+  fill: var(--accent);
+}
+
+.blue {
+  background: var(--blue);
+  fill: var(--blue);
+}
+
+.red {
+  background: var(--red);
+  fill: var(--red);
+}
+
+.pink {
+  background: var(--pink);
+  fill: var(--pink);
+}
+
+.yellow {
+  background: var(--yellow);
+  fill: var(--yellow);
+}
+
+@media screen and (orientation: portrait) {
+  main {
+    grid-template-columns: repeat(3, 1fr);
+    width: min(100%, 60vh);
+    height: min(100%, 167vw);
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --bg: var(--light);
+    --accent: var(--dark);
+  }
+}

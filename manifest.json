@@ -1,0 +1,16 @@
+{
+  "background_color": "#ffffff",
+  "theme_color": "#ffffff",
+  "name": "Aaron",
+  "short_name": "Aaron",
+  "display": "minimal-ui",
+  "start_url": "/",
+  "icons": [
+    {
+      "src": "logo.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable any"
+    }
+  ]
+}
