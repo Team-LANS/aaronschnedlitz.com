@@ -9,6 +9,8 @@
 
   --bg: var(--dark);
   --accent: var(--light);
+
+  color-scheme: dark light;
 }
 
 html,
