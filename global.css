@@ -10,7 +10,7 @@
   --bg: var(--dark);
   --accent: var(--light);
 
-  color-scheme: dark light;
+  color-scheme: dark;
 }
 
 html,
@@ -90,9 +90,11 @@ path {
   }
 }
 
+/* REMOVED FOR NOW, DARK LOOKS SO MUCH BETTER
 @media (prefers-color-scheme: light) {
   :root {
     --bg: var(--light);
     --accent: var(--dark);
   }
 }
+*/
