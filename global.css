@@ -30,11 +30,12 @@ body {
 }
 
 main {
+  --fill: 0.618;
+
   display: grid;
   grid-template-columns: repeat(5, 1fr);
-  width: min(100vw, 166.6667vh);
-  height: min(100vh, 60vw);
-  transform: scale(0.618);
+  aspect-ratio: 5 / 3;
+  width: min(100vw * var(--fill), 100vh * var(--fill) * 5 / 3);
 }
 
 svg {
@@ -84,8 +85,8 @@ path {
 @media screen and (orientation: portrait) {
   main {
     grid-template-columns: repeat(3, 1fr);
-    width: min(100%, 60vh);
-    height: min(100%, 167vw);
+    aspect-ratio: 3 / 5;
+    width: min(100vw * var(--fill), 100vh * var(--fill) * 3 / 5);
   }
 }
 
