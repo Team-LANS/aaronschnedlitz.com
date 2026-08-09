@@ -1,14 +1,13 @@
 :root {
-  --dark: #010101;
-  --light: #f9f6ee;
+  --bg: #f2f0e4;
+  --neutral: #e1d1b7;
 
-  --blue: #0b6af9;
-  --red: #f75b27;
-  --pink: #f6a0d8;
-  --yellow: #f7de40;
+  --green: #394422;
+  --orange: #d17b5a;
+  --red: #814745;
+  --yellow: #ae8859;
 
-  --bg: var(--dark);
-  --accent: var(--light);
+  --accent: var(--neutral);
 
   color-scheme: dark;
 }
@@ -63,18 +62,18 @@ path {
 }
 
 .blue {
-  background: var(--blue);
-  fill: var(--blue);
+  background: var(--green);
+  fill: var(--green);
 }
 
 .red {
-  background: var(--red);
-  fill: var(--red);
+  background: var(--orange);
+  fill: var(--orange);
 }
 
 .pink {
-  background: var(--pink);
-  fill: var(--pink);
+  background: var(--red);
+  fill: var(--red);
 }
 
 .yellow {
@@ -93,8 +92,8 @@ path {
 /* REMOVED FOR NOW, DARK LOOKS SO MUCH BETTER
 @media (prefers-color-scheme: light) {
   :root {
-    --bg: var(--light);
-    --accent: var(--dark);
+    --bg: var(--neutral);
+    --accent: var(--bg);
   }
 }
 */
